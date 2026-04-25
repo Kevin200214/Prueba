@@ -1,5 +1,4 @@
-FROM openjdk:17-jdk-slim
-ARG JAR_FILE=target/crudmongo-1.jar
-COPY ${JAR_FILE} app.jar
+FROM eclipse-temurin:17-jdk-alpine
+COPY ./target/crudmongo-1.jar app.jar
 EXPOSE 8203
-ENTRYPOINT ["java","-jar","/app.jar"]OINT [ "java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"],"-jar","/app.jar"]OINT [ "java", "-jar", "app.jar"]

@@ -1,4 +1,6 @@
 FROM eclipse-temurin:17-jdk-alpine
-COPY **/crudmongo-1.jar app.jar
-# Esto le dice a Spring que use el puerto de Render o el 8203 si no hay otro
-ENTRYPOINT ["java","-Dserver.port=${PORT:-8203}","-jar","/app.jar"]
+# Copia cualquier jar que encuentre en la raiz de la app
+COPY target/*.jar app.jar
+EXPOSE 8203
+# Forzamos a que ignore errores de perfiles y use el puerto correcto
+ENTRYPOINT ["java","-Dserver.port=${PORT:-8203}","-jar","/app.jar"],"-Dserver.port=${PORT:-8203}","-jar","/app.jar"]

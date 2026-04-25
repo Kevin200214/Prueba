@@ -1,0 +1,17 @@
+com\crud\app\CrudmongoApplication.class
+com\crud\app\models\Jugador.class
+com\crud\app\repositories\JugadorRepository.class
+com\crud\app\controllers\ClubController.class
+com\crud\app\models\entrenador.class
+com\crud\app\repositories\CompeticionRepository.class
+com\uts\proyecto\repository\EntrenadorRepository.class
+com\crud\app\models\Competicion.class
+com\uts\proyecto\model\club.class
+com\uts\proyecto\repository\JugadorRepository.class
+com\crud\app\models\Asociacion.class
+com\crud\app\repositories\AsociacionRepository.class
+com\crud\app\repositories\ClubRepository.class
+com\uts\proyecto\model\jugador.class
+com\crud\app\repositories\EntrenadorRepository.class
+com\crud\app\models\Club.class
+com\uts\proyecto\model\entrenador.class
